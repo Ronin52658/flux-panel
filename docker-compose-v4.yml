@@ -24,6 +24,7 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       timeout: 10s
       retries: 10
+      
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: gost-phpmyadmin
